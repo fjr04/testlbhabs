@@ -203,7 +203,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
             }
 
             const textWA = `Halo ABS Law Office,%0A%0APerkenalkan, nama saya: ${name}%0AEmail: ${email}%0ATerkait keperluan: ${subject}%0A%0A${message}`;
-            window.open(`https://wa.me/6285280048234?text=${textWA}`, '_blank');
+            window.open(`https://wa.me/6288276277926?text=${textWA}`, '_blank');
         }
 
         window.openModal = openModal;
