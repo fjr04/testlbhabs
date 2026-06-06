@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABS Law Office - Advokat & Legal Konsultan</title>
+    <meta name="description" content="ABS Law Office - Advokat dan konsultan hukum profesional untuk litigasi, non-litigasi, perlindungan aset, kontrak bisnis, somasi, sengketa, dan konsultasi hukum perusahaan.">
+    <meta name="theme-color" content="#040b16">
+    <meta name="robots" content="index, follow">
+
+    <!-- Ganti domain ini setelah domain production Anda aktif -->
+    <link rel="canonical" href="https://example.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ABS Law Office - Advokat & Legal Konsultan">
+    <meta property="og:description" content="Pelayanan hukum litigasi dan non-litigasi untuk perusahaan, bisnis, dan perlindungan aset.">
+    <meta property="og:image" content="https://example.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://example.com/">
+
+    <link rel="preload" href="assets/fonts/poppins-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/playfair-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/images/hero.jpg" as="image" fetchpriority="high">
+
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <script src="assets/js/main.min.js" defer></script>
+</head>
+<body class="antialiased selection:bg-secondary selection:text-black">
+
+    <!-- =============================================
+         NAVBAR — class md:hidden / md:flex diganti
+         nav-burger / nav-links agar breakpointnya lg
+         ============================================= -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-500 transparent-nav">
+        <div class="container mx-auto px-6 md:px-12 flex justify-between items-center">
+            
+            <a href="#" class="flex items-center group">
+                <img src="assets/images/logo.png" alt="ABS Law Office" class="h-10 md:h-12 object-contain transition-transform duration-500 group-hover:scale-105" decoding="async" fetchpriority="high" width="180" height="56" onerror="this.outerHTML='<h1 class=\'font-serif text-2xl font-bold text-gold tracking-widest\'>ABS LAW OFFICE</h1>'">
+            </a>
+
+            <div class="nav-links space-x-10 font-medium text-[12px] tracking-[0.1em] uppercase">
+                <a href="#home" class="hover:text-secondary transition-colors text-white">Beranda</a>
+                <a href="#tentang" class="hover:text-secondary transition-colors">Tentang</a>
+                <a href="#layanan" class="hover:text-secondary transition-colors">Layanan</a>
+                <a href="#aktivitas" class="hover:text-secondary transition-colors">Aktivitas</a>
+                <a href="#tim" class="hover:text-secondary transition-colors">Tim Pakar</a>
+            </div>
+            
+            <a href="#kontak" class="nav-cta btn-gold px-7 py-3 rounded font-bold tracking-wider uppercase text-[10px]">
+                Jadwalkan Konsultasi
+            </a>
+            
+            <button id="mobile-menu-btn" type="button" aria-label="Buka menu navigasi" aria-controls="mobile-menu" aria-expanded="false" class="nav-burger text-2xl text-secondary focus:outline-none">
+                <i aria-hidden="true" class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile dropdown -->
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full">
+            <div class="flex flex-col px-6 py-6 space-y-5 text-center uppercase tracking-widest text-xs font-medium">
+                <a href="#home" class="mobile-link text-white hover:text-secondary">Beranda</a>
+                <a href="#tentang" class="mobile-link text-white hover:text-secondary">Tentang</a>
+                <a href="#layanan" class="mobile-link text-white hover:text-secondary">Layanan Hukum</a>
+                <a href="#aktivitas" class="mobile-link text-white hover:text-secondary">Aktivitas</a>
+                <a href="#tim" class="mobile-link text-white hover:text-secondary">Tim Pakar</a>
+                <a href="#kontak" class="mobile-link inline-block btn-gold text-primary font-bold px-6 py-3 mt-4 rounded">Jadwalkan Konsultasi</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative min-h-screen flex items-center justify-start bg-cover bg-[position:75%_top] md:bg-right-top pt-20 pb-10" style="background-image: url('assets/images/hero.jpg');">
+        
+        <div class="absolute inset-0 bg-[#040b16] opacity-30 z-0 mix-blend-color"></div>
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+
+        <div class="relative z-10 px-6 md:px-16 lg:px-24 max-w-5xl mt-12 md:mt-0 reveal active">
+            <div class="inline-flex items-center gap-3 border border-secondary/40 bg-secondary/10 px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm shadow-[0_0_15px_rgba(197,155,39,0.15)]">
+                <div class="w-2 h-2 bg-secondary rounded-full animate-pulse shadow-[0_0_8px_#C59B27]"></div>
+                <p class="text-secondary font-bold tracking-[0.2em] uppercase text-[9px] md:text-[10px]">Andi Baroar Sakti Law Office</p>
+            </div>
+            
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight font-serif drop-shadow-[0_10px_20px_rgba(0,0,0,0.8)]">
+                Keadilan, Kepastian Hukum & <br class="hidden md:block">
+                <span class="text-gold">Perlindungan Hak yang Merata</span>
+            </h1>
+            
+            <p class="text-gray-300 text-sm md:text-base lg:text-lg mb-8 max-w-3xl font-light leading-relaxed tracking-wide drop-shadow-md">
+                <strong class="text-white font-medium">Legal Strategic Advisory, State/Government Examination.</strong> Hadir membantu dan menjawab kebutuhan perusahaan bapak/ibu baik secara virtual maupun dengan pertemuan terbatas untuk berdiskusi tentang hukum Perusahaan, perencanaan perlindungan aset diantaranya: Draft/Review Kontrak Perjanjian, SOMASI, Gugatan Wanprestasi & PMH, Membuat Laporan Polisi, dan lain sebagainya.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#kontak" class="btn-gold text-center px-8 py-3.5 font-bold tracking-[0.1em] uppercase text-xs rounded">
+                    Jadwalkan Konsultasi
+                </a>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-darkBg z-0"></div>
+    </section>
+
+    <section id="tentang" class="py-32 bg-darkBg relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-5xl text-center reveal">
+            <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-4">Tentang Kami</h4>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-10 font-serif leading-snug">
+                Pendekatan Praktis yang Solid untuk <br><span class="text-gold italic">Menjaga & Melindungi Aset Bisnis Anda</span>
+            </h2>
+            
+            <p class="text-gray-400 font-light text-base md:text-lg mb-8 leading-relaxed max-w-3xl mx-auto">
+                Pada saat ini perlu ditingkatkan kesadaran dan pemahaman yang menyeluruh tentang perlindungan aset, mengingat perlindungan aset merupakan salah satu elemen penting dalam kehidupan pribadi dan bisnis sebagai upaya merencanakan dan menjaga agar aset pribadi dan bisnis dapat terlindungi dari resiko Penggelapan, Penipuan, Hutang Piutang, Sengketa Bisnis, Sengketa Pertanahan, Hukum Asuransi, hingga Hukum Perbankan.
+            </p>
+            
+            <p class="text-gray-400 font-light text-base md:text-lg leading-relaxed max-w-3xl mx-auto mb-16">
+                Andi Baroar Sakti Law Office menawarkan suatu kerjasama yang saling menguntungkan. Terdiri dari para Lawyer dengan kompetensi di bidangnya, kami dapat membantu staff Legal dalam menyelesaikan setiap permasalahan hukum di Perusahaan anda, agar kinerja staff Legal semakin maksimal, efektifitas serta produktifitas Perusahaan tetap terjaga.
+            </p>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-primary z-0 pointer-events-none"></div>
+    </section>
+
+    <section id="layanan" class="py-32 bg-primary relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-7xl reveal relative z-10">
+            <div class="text-center mb-20">
+                <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3">Area Praktik Hukum</h4>
+                <h2 class="text-3xl md:text-4xl font-bold text-white font-serif mb-4">Pelayanan Hukum <span class="text-gold italic">Kami</span></h2>
+                <p class="text-gray-400 font-light text-sm max-w-3xl mx-auto">Kami memberikan pelayanan hukum baik secara Non Litigasi maupun Litigasi. Di aspek non litigasi, bantuan pelayanan meliputi mediasi, pembuatan legal opinion, legal audit, lobby dan diplomasi, serta membuat rencana strategis.</p>
+            </div>
+
+            <div class="mb-10 flex items-center justify-center gap-4">
+                <div class="h-px bg-gray-800 flex-1"></div>
+                <h3 class="text-2xl font-bold text-white font-serif flex items-center gap-3 px-4">
+                    <i aria-hidden="true" class="fa-regular fa-handshake text-secondary"></i> BIDANG NON LITIGASI
+                </h3>
+                <div class="h-px bg-gray-800 flex-1"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-building text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Perusahaan & Bisnis</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pendirian Perusahaan, Peralihan Saham, RUPS, Penentuan Hak Suara, Merger, Akuisisi, Initial Public Offering (Go Public). Pembuatan Kontrak-Kontrak Bisnis, Agensi, Lisensi, Franchise, Penanaman Modal Asing (PMA/PMDN).</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-tree-city text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Konstruksi & Lingkungan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pembuatan Perjanjian Dalam Penyelesaian Sengketa Lingkungan, Pembuatan perjanjian pemborongan, Pembuatan AMDAL.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-lightbulb text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hak Atas Kekayaan Intelektual</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pendaftaran Atas Hak Merek Dagang, Paten, Cipta, Rahasia Dagang, Rangkaian Sirkuit, Varietas Tanaman dan Desain Industri (Termasuk Pembuatan dan Pendaftaran Perjanjian Lisensi).</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-scale-balanced text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Anti Monopoli & Persaingan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Agar Perjanjian Yang Dibuat Tidak Melanggar Atas Ketentuan Mengenai Anti Monopoli Dan Persaingan Usaha Tidak Sehat.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-building-columns text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Perbankan & Asuransi</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pembuatan Perjanjian Kredit, Pengikatan Jaminan, Eksekusi Hak Tanggungan, Penjualan Lelang. Review atas perjanjian polis asuransi (jiwa maupun harta perusahaan), dan pengajuan Klaim Asuransi.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-users-gear text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum Ketenagakerjaan</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Membuat Peraturan Perusahaan, Kesepakatan Kerja Bersama, Pemutusan Hubungan Kerja Dan Penyelesaian Masalah Perburuhan baik di lembaga Bipartit, Konsiliasi, mediasi maupun Pengadilan Perburuhan.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-gem text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Pertambangan, Agraria & SDA</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Pengurusan Sertifikasi Tanah, Pengurusan Perjanjian Jual Beli Tanah. Pembuatan kontrak karya, kerjasama perusahaan pertambangan nasional dengan asing dan swasta dalam negeri.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-briefcase-medical text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Sektor Khusus Lainnya</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Hukum Kesehatan (Informed Consent), Hukum Keluarga, Perdagangan Internasional, Informasi & Teknologi (Software/Lisensi), Kelautan, dan Hukum Perlindungan Konsumen.</p>
+                </div>
+
+                <div class="service-card p-8 rounded-lg text-center md:text-left">
+                    <i aria-hidden="true" class="fa-solid fa-landmark text-3xl text-secondary mb-4"></i>
+                    <h4 class="text-white font-bold text-sm uppercase tracking-wide mb-3">Hukum T.U.N & Gov. Affair</h4>
+                    <p class="text-gray-400 text-xs font-light leading-relaxed">Konsultasi teknik dan strategi beracara di PTUN/PTTUN. Serta membangun hubungan dengan pemerintahan dan birokrasi dalam kaitan dengan perijinan dan legalitas.</p>
+                </div>
+            </div>
+
+            <div class="mb-10 flex items-center justify-center gap-4">
+                <div class="h-px bg-gray-800 flex-1"></div>
+                <h3 class="text-2xl font-bold text-white font-serif flex items-center gap-3 px-4">
+                    <i aria-hidden="true" class="fa-solid fa-gavel text-secondary"></i> BIDANG LITIGASI
+                </h3>
+                <div class="h-px bg-gray-800 flex-1"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                <div class="service-card p-6 rounded-lg text-center">
+                    <i aria-hidden="true" class="fa-solid fa-scale-unbalanced text-2xl text-secondary mb-3"></i>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Perdata</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara dihadapan Pengadilan Negeri, Niaga, dan Agama mewakili klien sebagai Kuasa Penggugat maupun Tergugat.</p>
+                </div>
+                <div class="service-card p-6 rounded-lg text-center">
+                    <i aria-hidden="true" class="fa-solid fa-handcuffs text-2xl text-secondary mb-3"></i>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Pidana</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Mendampingi klien selaku Penasehat Hukum dalam penyidikan Kepolisian, Kejaksaan, KPK, dan Pengadilan.</p>
+                </div>
+                <div class="service-card p-6 rounded-lg text-center">
+                    <i aria-hidden="true" class="fa-solid fa-institution text-2xl text-secondary mb-3"></i>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum T.U.N</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Bertindak mewakili dan beracara dihadapan Pengadilan Tata Usaha Negara (PTUN, PTTUN) selaku kuasa Penggugat/Tergugat.</p>
+                </div>
+                <div class="service-card p-6 rounded-lg text-center">
+                    <i aria-hidden="true" class="fa-solid fa-users text-2xl text-secondary mb-3"></i>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Perburuhan</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara Pengadilan Perselisihan Hubungan Industrial mewakili buruh maupun Pengusaha/Majikan.</p>
+                </div>
+                <div class="service-card p-6 rounded-lg text-center">
+                    <i aria-hidden="true" class="fa-solid fa-file-invoice-dollar text-2xl text-secondary mb-3"></i>
+                    <h4 class="text-white font-bold text-sm mb-2">Hukum Kepailitan</h4>
+                    <p class="text-gray-400 text-[11px] font-light">Beracara di pengadilan niaga, baik mewakili Pemohon ataupun Termohon Pailit.</p>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-darkBg z-0 pointer-events-none"></div>
+    </section>
+
+    <section id="aktivitas" class="py-32 bg-darkBg relative">
+        <div class="container mx-auto px-6 md:px-12 text-center mb-16 reveal relative z-10">
+            <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3">Activities</h4>
+            <h2 class="text-3xl md:text-4xl font-bold text-white font-serif">Keterlibatan <span class="text-gold italic">Strategis</span></h2>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-12 reveal relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-1/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Kordinasi Kapolri" onerror="this.src='https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                        <img src="assets/images/activity-1/2.jpg" class="fade-slide fade-2 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Kordinasi Kapolri" onerror="this.src='https://images.unsplash.com/photo-1541872703-74c5e44368f9?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                        <img src="assets/images/activity-1/3.jpg" class="fade-slide fade-3 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Kordinasi Kapolri" onerror="this.src='https://images.unsplash.com/photo-1505664177941-6d61b4712fd9?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Kordinasi Kepolisian</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">KORDINASI DENGAN KAPOLRI, KABARESKRIM DAN PROPAM, DALAM RANGKA MENDUKUNG PROGRAM KEPOLISIAN REPUBLIK INDONESIA YANG PRESISI.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-2/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Istana Negara" onerror="this.src='https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                        <img src="assets/images/activity-2/2.jpg" class="fade-slide fade-2 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Istana Negara" onerror="this.src='https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Arahan Presiden di Istana</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">MEMOHON ARAHAN DAN KEBIJAKAN BAPAK PRESIDEN JOKO WIDODO DI ISTANA NEGARA SEHUBUNGAN PERMASALAHAN LAHAN KSO DI PESAPEN KALIANAK, SURABAYA.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-3/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Gugatan Wanprestasi" onerror="this.src='https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Gugatan Wanprestasi</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">GUGATAN WANPRESTASI YANG TERJADI DI PENGADILAN NEGERI BATAM ANTARA PERUSAHAAN PERKAPALAN NASIONAL MELAWAN PMA INTERNASIONAL.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-4/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="PMII" onerror="this.src='https://images.unsplash.com/photo-1436450412740-6b988f486c6b?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Advokasi Yayasan PMII</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">ADVOKASI/PEMBELAAN HUKUM KEPADA YAYASAN PMII BUNGA DI WILAYAH PN JAKARTA TIMUR SEHUBUNGAN GUGATAN PMH.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-5/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Asuransi" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Kasus Penipuan Asuransi</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">MEMBERIKAN ADVOKASI KEPADA KLIEN YANG MENGALAMI PENIPUAN ASURANSI.</p>
+                    </div>
+                </div>
+
+                <div class="relative overflow-hidden rounded-lg h-[300px] bg-primary group shadow-2xl shadow-black">
+                    <div class="absolute inset-0 z-0">
+                        <img src="assets/images/activity-6/1.jpg" class="fade-slide fade-1 grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" alt="Pajakind" onerror="this.src='https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600'" decoding="async" loading="lazy" width="600" height="300">
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#040b16] via-[#040b16]/70 to-transparent pointer-events-none z-10"></div>
+                    <div class="absolute bottom-0 p-8 pointer-events-none w-full z-20">
+                        <h4 class="text-white font-serif text-lg leading-snug mb-2">Kerjasama Pajakind</h4>
+                        <p class="text-gray-400 text-xs font-light line-clamp-3">KERJASAMA DENGAN PAJAKIND, UNTUK MENGENAL LEBIH DALAM LAGI MENGENAI PERPAJAKAN, SEBAGAIMANA SLOGAN PAJAK "ORANG BIJAK TAAT PAJAK".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-primary z-0 pointer-events-none"></div>
+    </section>
+
+    <section id="tim" class="py-32 bg-primary relative">
+        <div class="container mx-auto px-6 md:px-12 max-w-6xl reveal relative z-10">
+            <div class="text-center mb-16">
+                <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3">Advokat & Pengacara</h4>
+                <h2 class="text-3xl md:text-5xl font-bold text-white font-serif mb-4">Profil <span class="text-gold italic">Tim Pakar</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="luxury-card rounded-xl p-8 text-center flex flex-col justify-between" role="button" tabindex="0" onclick="openModal('modal-andi')" onkeydown="handleCardKey(event, 'modal-andi')">
+                    <div>
+                        <img src="assets/images/team-andi.jpg" alt="Andi Baroar" class="w-32 h-32 mx-auto rounded-full object-cover border-2 border-secondary mb-5 grayscale hover:grayscale-0 transition-all" onerror="this.src='https://ui-avatars.com/api/?name=Andi+Baroar&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+                        <h3 class="text-xl font-bold text-white font-serif mb-1">Andi Baroar Nasution, S.H., M.H.</h3>
+                        <p class="text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Pengacara / Managing Partner</p>
+                    </div>
+                    <button class="mt-4 px-4 py-3 bg-secondary/10 border border-secondary/50 text-secondary text-xs rounded hover:bg-secondary hover:text-black font-bold tracking-wider uppercase transition-colors w-full">
+                        Klik untuk Lihat Profil Lengkap
+                    </button>
+                </div>
+
+                <div class="luxury-card rounded-xl p-8 text-center flex flex-col justify-between" role="button" tabindex="0" onclick="openModal('modal-iskandar')" onkeydown="handleCardKey(event, 'modal-iskandar')">
+                    <div>
+                        <img src="assets/images/team-iskandar.jpg" alt="H. Achmad Iskandar" class="w-32 h-32 mx-auto rounded-full object-cover border-2 border-secondary mb-5 grayscale hover:grayscale-0 transition-all" onerror="this.src='https://ui-avatars.com/api/?name=Achmad+Iskandar&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+                        <h3 class="text-xl font-bold text-white font-serif mb-1">H. Achmad Iskandar, S.H.</h3>
+                        <p class="text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Pengacara</p>
+                    </div>
+                    <button class="mt-4 px-4 py-3 bg-secondary/10 border border-secondary/50 text-secondary text-xs rounded hover:bg-secondary hover:text-black font-bold tracking-wider uppercase transition-colors w-full">
+                        Klik untuk Lihat Profil Lengkap
+                    </button>
+                </div>
+
+                <div class="luxury-card rounded-xl p-8 text-center flex flex-col justify-between" role="button" tabindex="0" onclick="openModal('modal-adam')" onkeydown="handleCardKey(event, 'modal-adam')">
+                    <div>
+                        <img src="assets/images/team-adam.jpg" alt="Adam Suwahyo" class="w-32 h-32 mx-auto rounded-full object-cover border-2 border-secondary mb-5 grayscale hover:grayscale-0 transition-all" onerror="this.src='https://ui-avatars.com/api/?name=Adam+Suwahyo&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+                        <h3 class="text-xl font-bold text-white font-serif mb-1">Adam Suwahyo, S.H., M.H.</h3>
+                        <p class="text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Pengacara</p>
+                    </div>
+                    <button class="mt-4 px-4 py-3 bg-secondary/10 border border-secondary/50 text-secondary text-xs rounded hover:bg-secondary hover:text-black font-bold tracking-wider uppercase transition-colors w-full">
+                        Klik untuk Lihat Profil Lengkap
+                    </button>
+                </div>
+
+                <div class="luxury-card rounded-xl p-8 text-center flex flex-col justify-between" role="button" tabindex="0" onclick="openModal('modal-widi')" onkeydown="handleCardKey(event, 'modal-widi')">
+                    <div>
+                        <img src="assets/images/team-widi.jpg" alt="Widi Faris" class="w-32 h-32 mx-auto rounded-full object-cover border-2 border-secondary mb-5 grayscale hover:grayscale-0 transition-all" onerror="this.src='https://ui-avatars.com/api/?name=Widi+Faris&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+                        <h3 class="text-xl font-bold text-white font-serif mb-1">Widi Faris Fauzan, S.H., M.H.</h3>
+                        <p class="text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Pengacara</p>
+                    </div>
+                    <button class="mt-4 px-4 py-3 bg-secondary/10 border border-secondary/50 text-secondary text-xs rounded hover:bg-secondary hover:text-black font-bold tracking-wider uppercase transition-colors w-full">
+                        Klik untuk Lihat Profil Lengkap
+                    </button>
+                </div>
+
+                <div class="luxury-card rounded-xl p-8 text-center flex flex-col justify-between" role="button" tabindex="0" onclick="openModal('modal-caryo')" onkeydown="handleCardKey(event, 'modal-caryo')">
+                    <div>
+                        <img src="assets/images/team-caryo.jpg" alt="Caryo Saputra" class="w-32 h-32 mx-auto rounded-full object-cover border-2 border-secondary mb-5 grayscale hover:grayscale-0 transition-all" onerror="this.src='https://ui-avatars.com/api/?name=Caryo+Saputra&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+                        <h3 class="text-xl font-bold text-white font-serif mb-1">Caryo Saputra, S.H.</h3>
+                        <p class="text-secondary text-[10px] font-bold tracking-widest uppercase mb-4">Staff Legal</p>
+                    </div>
+                    <button class="mt-4 px-4 py-3 bg-secondary/10 border border-secondary/50 text-secondary text-xs rounded hover:bg-secondary hover:text-black font-bold tracking-wider uppercase transition-colors w-full">
+                        Klik untuk Lihat Profil Lengkap
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center border-t border-gray-800 pt-8">
+                <p class="text-[11px] md:text-xs text-gray-400 font-light tracking-wide uppercase">Semua Pengacara Kami Telah Terdaftar dan Memiliki Kartu Tanda Pengenal Advokat (KTPA) PERADI.</p>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-darkBg z-0 pointer-events-none"></div>
+    </section>
+
+    <section id="kontak" class="pt-24 pb-12 bg-darkBg relative">
+        <div class="container mx-auto px-6 md:px-12 relative z-10">
+            <div class="bg-cardBg shadow-[0_15px_40px_rgba(0,0,0,0.9)] rounded overflow-hidden flex flex-col lg:flex-row border border-gray-800 mb-16 reveal">
+                
+                <div class="lg:w-2/5 p-10 lg:p-14 border-b lg:border-b-0 lg:border-r border-gray-800 bg-primary">
+                    <h4 class="text-secondary font-bold uppercase tracking-[0.2em] text-[10px] mb-2">Terhubung Bersama Kami</h4>
+                    <h3 class="text-2xl font-serif text-white mb-10">Reservasi <span class="text-gold">Konsultasi</span></h3>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <i aria-hidden="true" class="fa-solid fa-location-dot text-secondary mt-1 text-lg"></i>
+                            <div>
+                                <h5 class="font-bold text-white text-xs mb-1">Alamat Eksklusif</h5>
+                                <p class="text-gray-400 text-xs font-light leading-relaxed">Gedung Antam Office Park Tower B Lt. 6<br>Jl. Letjen. TB Simatupang No. 1<br>Tanjung Barat, Jakarta Selatan 12530</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i aria-hidden="true" class="fa-solid fa-envelope text-secondary mt-1 text-lg"></i>
+                            <div>
+                                <h5 class="font-bold text-white text-xs mb-1">Surat Elektronik</h5>
+                                <p class="text-gray-400 text-xs font-light leading-relaxed">abs.lawoffice88@gmail.com<br>abs.lawoffice@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i aria-hidden="true" class="fa-solid fa-phone text-secondary mt-1 text-lg"></i>
+                            <div>
+                                <h5 class="font-bold text-white text-xs mb-1">Direct Line / WA</h5>
+                                <p class="text-gray-400 text-xs font-light leading-relaxed">0852-8004-8234<br>0857-7915-7357</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:w-3/5 p-10 lg:p-14">
+                    <h3 class="text-xl font-bold text-white mb-2 font-serif">Kirim Pesan Prioritas</h3>
+                    <p class="text-gray-500 mb-10 text-xs font-light">Representatif kami akan merespons dalam 1x24 jam.</p>
+                    
+                    <form id="contactForm" action="https://formspree.io/f/xdavkryp" method="POST" class="space-y-8">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div>
+                                <input type="text" id="name" name="Nama_Pengirim" aria-label="Nama atau instansi Anda" class="w-full px-0 py-2 bg-transparent border-0 border-b border-gray-700 text-white focus:ring-0 focus:border-secondary transition-colors text-xs placeholder-gray-600 font-light" placeholder="Nama / Instansi Anda" required>
+                            </div>
+                            <div>
+                                <input type="email" id="email" name="Email_Pengirim" aria-label="Alamat email" class="w-full px-0 py-2 bg-transparent border-0 border-b border-gray-700 text-white focus:ring-0 focus:border-secondary transition-colors text-xs placeholder-gray-600 font-light" placeholder="Alamat Email" required>
+                            </div>
+                        </div>
+                        <input type="text" id="subject" name="Subjek" aria-label="Subjek keperluan" class="w-full px-0 py-2 bg-transparent border-0 border-b border-gray-700 text-white focus:ring-0 focus:border-secondary transition-colors text-xs placeholder-gray-600 font-light" placeholder="Subjek Keperluan (Contoh: Sengketa Bisnis)" required>
+                        <textarea id="message" name="Pesan" aria-label="Deskripsi singkat pesan" rows="3" class="w-full px-0 py-2 bg-transparent border-0 border-b border-gray-700 text-white focus:ring-0 focus:border-secondary transition-colors text-xs placeholder-gray-600 resize-none font-light" placeholder="Deskripsi Singkat..." required></textarea>
+                        
+                        <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                            <button type="submit" id="btnSubmitEmail" class="flex-1 btn-gold px-6 py-3.5 rounded font-bold tracking-widest uppercase text-[10px] flex items-center justify-center gap-2">
+                                <i aria-hidden="true" class="fa-regular fa-paper-plane text-sm"></i> KIRIM PESAN EMAIL
+                            </button>
+                            <button type="button" onclick="sendToWA()" class="flex-1 bg-[#25D366] hover:bg-[#20bd5a] text-white px-6 py-3.5 rounded font-bold tracking-widest uppercase text-[10px] flex items-center justify-center gap-2 transition-colors shadow-lg shadow-[#25D366]/20">
+                                <i aria-hidden="true" class="fa-brands fa-whatsapp text-sm"></i> KIRIM VIA WHATSAPP
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="text-center pt-8 border-t border-gray-800">
+                <img src="assets/images/logo.png" alt="ABS Law Office" class="h-8 object-contain mx-auto mb-4 opacity-50" onerror="this.outerHTML=''" decoding="async" loading="lazy" width="180" height="56">
+                <p class="text-[9px] md:text-[10px] text-gray-600 tracking-wider uppercase font-light">&copy; <span id="year"></span> ABS LAW OFFICE. ADVOKAT & LEGAL KONSULTAN. TERDAFTAR RESMI PERADI.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="customAlert" class="fixed inset-0 z-[100] flex items-center justify-center bg-[#040b16]/80 backdrop-blur-md opacity-0 invisible transition-all duration-300">
+        <div class="bg-cardBg border border-secondary/30 p-8 rounded shadow-[0_0_40px_rgba(0,0,0,0.8)] max-w-sm w-full mx-4 transform scale-95 transition-transform duration-300 text-center" id="alertBox">
+            <div id="alertIcon" class="mb-5"></div>
+            <h3 id="alertTitle" class="text-xl font-serif text-white mb-2"></h3>
+            <p id="alertMessage" class="text-gray-400 text-xs font-light leading-relaxed mb-8"></p>
+            <button onclick="closeCustomAlert()" id="alertBtn" class="w-full py-3.5 rounded text-[#040b16] font-bold tracking-widest uppercase text-[10px] transition-colors">TUTUP</button>
+        </div>
+    </div>
+
+    <div id="modal-andi" class="modal-overlay">
+        <div class="container mx-auto px-6 py-20 max-w-4xl relative min-h-screen flex flex-col justify-center">
+            <button onclick="closeModal('modal-andi')" class="absolute top-10 right-6 text-gray-400 hover:text-white text-4xl transition-colors" aria-label="Tutup modal">&times;</button>
+            <h2 class="text-3xl md:text-4xl text-white font-serif mb-2">Andi Baroar Nasution, S.H., M.H.</h2>
+            <p class="text-secondary text-xs uppercase tracking-widest mb-10 border-b border-gray-800 pb-4">Pengalaman Karir / Managing Partner</p>
+            <div class="space-y-4">
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung pada Nugraha Kurnia Purwito & Partners menjabat sebagai Associate pada tahun 2006 sampai dengan 2007.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung pada Law Office D.I Nugraha & Partners sebagai Para Legal tahun 2007 sampai dengan Tahun 2008.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah sebagai Manager Partners pada AFA Law Firm & Lembaga Bantuan Hukum pada tahun 2008 sampai dengan tahun 2009.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pada tahun 2009 mandapatkan Lisensi Advokat dari Kongres Advokat Indonesia.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di Lembaga Bantuan Hukum Anak Negeri sebagai Partner pada tahun 2010 sampai dengan tahun 2013.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di Lemabaga Konsultasi dan Bantuan Hukum & Penegak Hukum Persatuan Wartawan Indonesia Cabang DKI Jakarta sebagai Pembela Umum pada tahun 2013.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Menjabat sebagai Sekretaris Jenderal Asosiasi Pengacara Pengadaan Barang dan Jasa Indonesia pada tahun 2015.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Menjabat sebagai ketua bidang hukum perdata LPPH di MPW Pemuda pancasila dari tahun 2017 sampai tahun 2022.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di MA, EMIL SALIM LAW OFFICE & ASSOCIATE sebagai Senior Lawyer tahun 2016.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2019 Menjadi Kuasa Hukum PT. Tri Sakti Lautan Mas sebagai Tergugat di Pengadilan Negeri Batam.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di MA, BRAJA JUDICATUM LAW OFFICE & ASSOCIATE sebagai Senior Lawyer tahun 2021.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2022 Menjadi Kuasa Hukum PT. Araya Prima di Surabaya dalam Laporan Polisi di Polda Jatim.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2023 Menjadi Kuasa Hukum Yayasan Pembangunan Masyarakat Islam Indonesia Bunga di Pengadilan Negeri Jakarta Timur sebagai Tergugat.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di TOFIK NASUTION LAW OFFICE & PARTNERS sebagai Senior Lawyer tahun 2022.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pernah bergabung di KANTOR HUKUM ROBI ANUGRAH MARPAUNG & PARTNERS pada tahun 2022.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2022 s/d Tahun 2023 sebagai Konsultan Hukum di BJB (Bank Jabar Banten).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Pada Tahun 2016 Mendirikan ANDI BAROAR SAKTI LAW OFFICE.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2022 s/d Tahun 2023 menangani permasalahan kasus di beberapa Perusahaan Asuransi.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2023 sebagai Kuasa Hukum Kepala TU Dana Pensiun Universitas Trisakti.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Tahun 2023 s/d Tahun 2024 sebagai Konsultan Hukum di PT. DUTA WIJAYA ELEKTRINDO ENGINERING Switchboard Manufacturer And Trader.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-iskandar" class="modal-overlay">
+        <div class="container mx-auto px-6 py-20 max-w-4xl relative min-h-screen flex flex-col justify-center text-center">
+            <button onclick="closeModal('modal-iskandar')" class="absolute top-10 right-6 text-gray-400 hover:text-white text-4xl transition-colors" aria-label="Tutup modal">&times;</button>
+            <img src="assets/images/team-iskandar.jpg" class="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full object-cover border-4 border-secondary mb-6 grayscale" onerror="this.src='https://ui-avatars.com/api/?name=Achmad+Iskandar&background=C59B27&color=fff'" decoding="async" loading="lazy" width="192" height="192">
+            <h2 class="text-3xl md:text-4xl text-white font-serif mb-2">H. Achmad Iskandar, S.H.</h2>
+            <p class="text-secondary text-xs uppercase tracking-widest mb-6 border-b border-gray-800 pb-4">Pengacara</p>
+            <p class="text-gray-400 text-sm md:text-base font-light max-w-2xl mx-auto">Pengacara berlisensi resmi dari PERADI yang tergabung dan memberikan dedikasi tinggi pada penyelesaian berbagai kasus litigasi dan non-litigasi di Andi Baroar Sakti Law Office.</p>
+        </div>
+    </div>
+
+    <div id="modal-adam" class="modal-overlay">
+        <div class="container mx-auto px-6 py-20 max-w-4xl relative min-h-screen flex flex-col justify-center">
+            <button onclick="closeModal('modal-adam')" class="absolute top-10 right-6 text-gray-400 hover:text-white text-4xl transition-colors" aria-label="Tutup modal">&times;</button>
+            <h2 class="text-3xl md:text-4xl text-white font-serif mb-2">Adam Suwahyo, S.H., M.H.</h2>
+            <p class="text-secondary text-xs uppercase tracking-widest mb-10 border-b border-gray-800 pb-4">Pengalaman Karir</p>
+            <div class="space-y-6">
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Sekretaris Lembaga Bantuan Hukum & Advokasi Publik Pimpinan Daerah Muhammadiyah kabupaten Bogor (Periode 2022-2027).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Anggota Majelis Hukum dan HAM PCM Cileungsi (Periode 2022-2027).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Ketua Program Studi Hukum Universitas Muhammadiyah Cileungsi (Periode 2024-2028).</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-widi" class="modal-overlay">
+        <div class="container mx-auto px-6 py-20 max-w-4xl relative min-h-screen flex flex-col justify-center">
+            <button onclick="closeModal('modal-widi')" class="absolute top-10 right-6 text-gray-400 hover:text-white text-4xl transition-colors" aria-label="Tutup modal">&times;</button>
+            <h2 class="text-3xl md:text-4xl text-white font-serif mb-2">Widi Faris Fauzan, S.H., M.H.</h2>
+            <p class="text-secondary text-xs uppercase tracking-widest mb-10 border-b border-gray-800 pb-4">Pengalaman Karir</p>
+            <div class="space-y-6">
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">(15 Maret 2016-30 Maret 2017) Pada periode ini saya bekerja di P.T. INDOMARCO PRISMATAMA sebagai bagian dari divisi Finance (Keuangan).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">(11 September 2017 - 31 Maret 2018) Pada periode ini saya bekerja di P.T. ASJAYA MUKTI GRAHA (ANNIELAND BRANCH OFFICE) sebagai bagian dari divisi Purchasing (Pengadaan).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">(01 Agustus 2019-29 Februari 2020) Pada periode ini saya berkesempatan untuk Magang di KEMENTERIAN HUKUM DAN HAK ASASI MANUSIA RI sebagai ASISTEN ANALIS pada Subdit Badan Hukum Perseroan Terbatas Terbuka.</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">(14 Februari 2022 - Sekarang) Mendamaikan Perusahaan jasa logistik P.T. LESCHACO LOGISTIC INDONESIA dengan karyawannya atas sengketa Pemutusan Kerja Sepihak akibat Efisiensi Perusahaan dan perdamaian diakhiri dengan perjanjian pengakhiran kerja yang menguntungkan kedua belah pihak (Non Litigasi).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Mendamaikan Perusahaan produksi Helm Cargloss P.T. PUTRA PRIMA GLOSIA dengan karyawannya atas sengketa Pemutusan Kerja Sepihak akibat berkurangnya performa Pekerja dan perdamaian diakhiri dengan Perjanjian Pengakhiran Kerja yang menguntungkan kedua belah pihak (Non Litigasi).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Mendamaikan Perusahaan penyedia bahan Kimia dan Tambang Minyak serta Gas Bumi P.T. CHAMPION KURNIA TECHNOLOGIES dengan karyawannya atas sengketa Pemutusan Kerja Sepihak akibat permasalahan internal antar Pekerja dan perdamaian diakhiri dengan Perjanjian Pengakhiran Kerja yang menguntungkan kedua belah pihak (Non Litigasi).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Mendamaikan Perusahaan garmen P.T. SHINTA WOOSUNG dengan karyawannya atas sengketa Pemutusan Kerja Sepihak akibat efisiensi Perusahaan dan perdamaian diakhiri dengan Perjanjian Pengakhiran Kerja yang menguntungkan kedua pihak (Non Litigasi).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Memenangkan kasus di Pengadilan Hubungan Industrial pada Pengadilan Negeri Serang antara Perusahaan Retail P.T. INDOMARCO ADI PRIMA dengan dua orang karyawannya. Nomor Perkara 047/Pdt.Sus-PHI/2023/PN.Srg (Litigasi).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Memenangkan kasus di Pengadilan Hubungan Industrial Pada Pengadilan Negeri Padang antara Perusahaan Kelapa Sawit P.T. KENCANA SAWIT INDONESIA di bawah grup WILMAR dengan SERIKAT PEKERJA KENCANA SAWIT INDONESIA atas sengketa Perjanjian Kerja Bersama dengan nomor perkara: 38/Pdt.Sus-PHI/2023/PN Pdg.</p></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-caryo" class="modal-overlay">
+        <div class="container mx-auto px-6 py-20 max-w-4xl relative min-h-screen flex flex-col justify-center">
+            <button onclick="closeModal('modal-caryo')" class="absolute top-10 right-6 text-gray-400 hover:text-white text-4xl transition-colors" aria-label="Tutup modal">&times;</button>
+            <h2 class="text-3xl md:text-4xl text-white font-serif mb-2">Caryo Saputra, S.H.</h2>
+            <p class="text-secondary text-xs uppercase tracking-widest mb-10 border-b border-gray-800 pb-4">Pengalaman Karir</p>
+            <div class="space-y-6">
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Asisiten Dosen Universitas Pancasila dan STIH Adhyaksa (Periode 2022-2024).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Wakil Sekretaris Jendral LBH Nusantara Bersinar Keadilan (Periode 2024-2028).</p></div>
+                <div class="timeline-item"><p class="text-gray-300 text-sm font-light">Staff Legal Andi Baroar Sakti Law Office (Periode 2024-2028).</p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
